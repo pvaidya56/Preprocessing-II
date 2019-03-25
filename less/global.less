@@ -43,8 +43,23 @@ img {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+
+  @media @phone {
+    max-width: 500px;
+    width: 90%;
+  }
 }
 header {
   display: flex;
   justify-content: space-between;
+
+  @media @phone {
+   flex-direction: column;
+  }
+  .logo {
+    @media @phone {
+      margin-left: 110px;
+      font-size: 3rem;
+    }
+  }
 }
